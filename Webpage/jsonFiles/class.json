@@ -1,0 +1,22 @@
+{
+    "classId": [
+        {
+            "class": "bench"
+        },
+        {
+            "class": "bicycle"
+        },
+        {
+            "class": "umbrella"
+        },
+        {
+            "class": "person"
+        },
+        {
+            "class": "car"
+        },
+        {
+            "class": "truck"
+        }
+    ]
+}

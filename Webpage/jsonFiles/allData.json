@@ -1,0 +1,134 @@
+{
+    "bench": [
+        {
+            "class": "'bench'",
+            "original": "'images/more-wallpapers-9.jpg'",
+            "image": "'croppedImages/bench/more-wallpapers-9_1.jpg'",
+            "name": "more-wallpapers-9_1.jpg",
+            "color": "'blue'",
+            "confidence": "96.0"
+        }
+    ],
+    "bicycle": [
+        {
+            "class": "'bicycle'",
+            "original": "'images/rua.jpg'",
+            "image": "'croppedImages/bicycle/rua_2.jpg'",
+            "name": "rua_2.jpg",
+            "color": "'red'",
+            "confidence": "99.0"
+        }
+    ],
+    "umbrella": [
+        {
+            "class": "'umbrella'",
+            "original": "'images/more-wallpapers-9.jpg'",
+            "image": "'croppedImages/umbrella/more-wallpapers-9_2.jpg'",
+            "name": "more-wallpapers-9_2.jpg",
+            "color": "'blue'",
+            "confidence": "73.0"
+        }
+    ],
+    "person": [
+        {
+            "class": "'person'",
+            "original": "'images/rua.jpg'",
+            "image": "'croppedImages/person/rua_1.jpg'",
+            "name": "rua_1.jpg",
+            "color": "'blue'",
+            "confidence": "99.0"
+        }
+    ],
+    "car": [
+        {
+            "class": "'car'",
+            "original": "'images/rua.jpg'",
+            "image": "'croppedImages/car/rua_5.jpg'",
+            "name": "rua_5.jpg",
+            "color": "'red'",
+            "confidence": "68.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/carros.jpg'",
+            "image": "'croppedImages/car/carros_1.jpg'",
+            "name": "carros_1.jpg",
+            "color": "'black'",
+            "confidence": "99.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/green.jpg'",
+            "image": "'croppedImages/car/green_1.jpg'",
+            "name": "green_1.jpg",
+            "color": "'green'",
+            "confidence": "99.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/carros.jpg'",
+            "image": "'croppedImages/car/carros_3.jpg'",
+            "name": "carros_3.jpg",
+            "color": "'red'",
+            "confidence": "99.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/rua.jpg'",
+            "image": "'croppedImages/car/rua_4.jpg'",
+            "name": "rua_4.jpg",
+            "color": "'blue'",
+            "confidence": "95.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/carros.jpg'",
+            "image": "'croppedImages/car/carros_5.jpg'",
+            "name": "carros_5.jpg",
+            "color": "'blue'",
+            "confidence": "96.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/carros.jpg'",
+            "image": "'croppedImages/car/carros_4.jpg'",
+            "name": "carros_4.jpg",
+            "color": "'red'",
+            "confidence": "98.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/rua.jpg'",
+            "image": "'croppedImages/car/rua_3.jpg'",
+            "name": "rua_3.jpg",
+            "color": "'blue'",
+            "confidence": "97.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/cinza.png'",
+            "image": "'croppedImages/car/cinza_1.png'",
+            "name": "cinza_1.png",
+            "color": "'black'",
+            "confidence": "98.0"
+        },
+        {
+            "class": "'car'",
+            "original": "'images/carros.jpg'",
+            "image": "'croppedImages/car/carros_2.jpg'",
+            "name": "carros_2.jpg",
+            "color": "'blue'",
+            "confidence": "99.0"
+        }
+    ],
+    "truck": [
+        {
+            "class": "'truck'",
+            "original": "'images/rua.jpg'",
+            "image": "'croppedImages/truck/rua_6.jpg'",
+            "name": "rua_6.jpg",
+            "color": "'blue'",
+            "confidence": "65.0"
+        }
+    ]
+}

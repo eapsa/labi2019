@@ -1,0 +1,89 @@
+{
+    "bench": [
+        {
+            "image": "croppedImages/bench/more-wallpapers-9_1.jpg",
+            "original": "images/more-wallpapers-9.jpg",
+            "confidence": "96.0"
+        }
+    ],
+    "bicycle": [
+        {
+            "image": "croppedImages/bicycle/rua_2.jpg",
+            "original": "images/rua.jpg",
+            "confidence": "99.0"
+        }
+    ],
+    "umbrella": [
+        {
+            "image": "croppedImages/umbrella/more-wallpapers-9_2.jpg",
+            "original": "images/more-wallpapers-9.jpg",
+            "confidence": "73.0"
+        }
+    ],
+    "person": [
+        {
+            "image": "croppedImages/person/rua_1.jpg",
+            "original": "images/rua.jpg",
+            "confidence": "99.0"
+        }
+    ],
+    "car": [
+        {
+            "image": "croppedImages/car/rua_5.jpg",
+            "original": "images/rua.jpg",
+            "confidence": "68.0"
+        },
+        {
+            "image": "croppedImages/car/carros_1.jpg",
+            "original": "images/carros.jpg",
+            "confidence": "99.0"
+        },
+        {
+            "image": "croppedImages/car/green_1.jpg",
+            "original": "images/green.jpg",
+            "confidence": "99.0"
+        },
+        {
+            "image": "croppedImages/car/carros_3.jpg",
+            "original": "images/carros.jpg",
+            "confidence": "99.0"
+        },
+        {
+            "image": "croppedImages/car/rua_4.jpg",
+            "original": "images/rua.jpg",
+            "confidence": "95.0"
+        },
+        {
+            "image": "croppedImages/car/carros_5.jpg",
+            "original": "images/carros.jpg",
+            "confidence": "96.0"
+        },
+        {
+            "image": "croppedImages/car/carros_4.jpg",
+            "original": "images/carros.jpg",
+            "confidence": "98.0"
+        },
+        {
+            "image": "croppedImages/car/rua_3.jpg",
+            "original": "images/rua.jpg",
+            "confidence": "97.0"
+        },
+        {
+            "image": "croppedImages/car/cinza_1.png",
+            "original": "images/cinza.png",
+            "confidence": "98.0"
+        },
+        {
+            "image": "croppedImages/car/carros_2.jpg",
+            "original": "images/carros.jpg",
+            "confidence": "99.0"
+        }
+    ],
+    "truck": [
+        {
+            "image": "croppedImages/truck/rua_6.jpg",
+            "original": "images/rua.jpg",
+            "confidence": "65.0"
+        }
+    ]
+}

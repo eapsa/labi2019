@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/untitled.css">
+</head>
+
+<body style="background-color: #BCBCBC;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top visible" data-aos="fade-down">
+        <div class="container-fluid"><a class="navbar-brand" href="/" target="_top"
+                style="background-color: #343a40;color: #ffb600;filter: blur(0px) brightness(100%);font-size: 29px;width: 100px;text-align: center;"><strong><em>Home</em></strong></a><button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="width: 588px;">
+                <ul class="nav navbar-nav shadow-lg ml-auto" style="/*background-color: rgba(162,164,160,0.58);*/">
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/all"
+                            style="color: #ffb600;"><em>Galeria</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/insert"
+                            style="color: #ffb600;"><em>Inserir</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/search"
+                            style="color: #ffb600;"><em>Pesquisar</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/about"
+                            style="color: #ffb600;"><em>Sobre</em></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="Start">
+        <div class="jumbotron" style="color: #343a40;">
+            <h1 style="color: #ffb600;">Recorte de imagens</h1>
+            <div class="row">
+                <div class="col-lg-5 offset-lg-0 text-left" style="padding: 10px;">
+                    <p class="text-break text-left"
+                        style="background-color: #BCBCBC;border-radius: 15px;border-width: thin;border-color: #D3A643;margin: 5px;color: #343a40;padding-left: 8px;font-size: 27px;height: 215px;">
+                        <br>Desenvolvido no âmbito da Unidade Curricular LABI, este projeto tem como objetivo armazenar imagens e recortá-las de acordo com os objetos identificados.<br><br></p>
+                </div>
+                <div class="col-lg-5 offset-lg-2"
+                    style="padding: 10px;background-color: #e5aa06;border-radius: 14px;border-width: thin;border-color: rgb(0,0,0);">
+                    <div class="carousel slide" data-ride="carousel" id="carousel-1">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item"><img class="w-100 d-block"
+                                    src="/img/logo.jpg" alt="Slide Image">
+                            </div>
+                            
+                            <div class="carousel-item active"><img class="w-100 d-block"
+                                    src="/img/deti.png" alt="Slide Image">
+                            </div>
+                            
+                            <div class="carousel-item"><img class="w-100 d-block"
+                                    src="/img/aveiro.jpg" alt="Slide Image">
+                            </div>
+
+                        </div>
+                        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span
+                                    class="carousel-control-prev-icon"></span><span
+                                    class="sr-only">Recuar</span></a><a class="carousel-control-next"
+                                href="#carousel-1" role="button" data-slide="next"><span
+                                    class="carousel-control-next-icon"></span><span class="sr-only">Avançar</span></a>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-1" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="jumbotron functions" style="background-color: #343a40;">
+        <h1 style="text-align: center;color: #ffb600;">Páginas</h1>
+        <div class="row" style="padding: 15px;">
+            <div class="col-lg-4 coluns"><i class="fa fa-database Icons" data-bs-hover-animate="pulse"
+                    style="background-color: #343a40;color: #ffb600;"></i>
+                <h2 id="Heading-Funcions" style="padding-top: 8px;">Galeria</h2>
+
+            </div>
+            <div class="col-lg-4 coluns" style="padding: 3px;"><i class="fa fa-pencil-square-o Icons"
+                    data-bs-hover-animate="pulse" style="font-size: 48px;color: #ffb600;"></i>
+                <h2 id="Heading-Funcions">Inserir</h2>
+            </div>
+            <div class="col-lg-4 coluns" style="padding: 3px;"><i class="fa fa-search Icons"
+                    data-bs-hover-animate="pulse" style="font-size: 42px;color: #ffb600;"></i>
+                <h2 id="Heading-Funcions" style="padding-top: 6px;">Pesquisar</h2>
+                <p class="Paragrafos-funcions"></p>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron functions" id="Objects" style="color:#ffffff; background-color: #343a40;">
+        <h1 style="text-align: center;color: #ffb600;">Classes Presentes na Base de Dados</h1>
+        
+        </div>
+    </div>
+    <footer style="/*background-color: #282821;*//*margin-left: 12px;*/">
+        <div class="container" style="/*background-color: #99897c;*/"><img src="assets/img/ua.png"
+                style="max-width: 4%;padding: 5px;margin-bottom: 10px;"></div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="js/untitled.js"></script>
+    <script>
+        $( document ).ready(function () {
+            var request = $.ajax({
+                'url': 'http://127.0.0.1:8899/all/classname?type=names'
+            });
+            request.done(function (response) {
+				
+                var lista = JSON.parse(response,(key,value)=>{
+					
+					var img;
+					if(key=="class"){
+						img = value;
+						
+						document.getElementById("Objects").innerHTML += "<h4>"+value+"</br>"+"</h4>";
+						}
+						
+						
+					});
+                var f= lista;
+                
+                var i, myJSON;
+			  var txt = "";
+			  
+			  var res="";
+			  var co=0;
+			  myJSON = JSON.stringify(lista);
+			 	
+			  for (i in lista) {
+					
+				
+			//console.log(myJSON.replace("}, ","\n ").replace(/[*+?^${}()|[\]]/g, "").replace(".jpg'\" ",".jpg'\"\n").replace(".jpeg'\" ",".jpeg'\"\n").replace(".png'\" ",".png'\"\n"));
+				
+				}
+					//console.log(txt+"\n");
+					
+					
+					console.log("INSERT COMPLETE");
+				});
+				request.fail(function (jqXHR, textStatus) {
+					alert('Request failed: ' + textStatus);
+				});
+        });
+        </script>
+</body>
+
+</html>

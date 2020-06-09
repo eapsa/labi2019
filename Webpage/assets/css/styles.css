@@ -1,0 +1,250 @@
+.nav-item.border.rounded.border-danger {
+  background-color: #8cccd3;
+}
+
+.nav-item.border.rounded.border-primary {
+  background-color: #54b7c6;
+}
+
+.navbar-light .navbar-brand {
+  border: outset;
+  border-radius: 0.50rem;
+  background-color: #343a40;
+  border-width: thin;
+}
+
+#Start {
+  padding-top: 75px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  padding-left: 14px;
+  text-align: justify;
+}
+
+#Start .jumbotron {
+  background-color: #343a40;
+  margin-right: 14px;
+  border-radius: 20px;
+}
+
+.nav-item.Paginas {
+  padding: 1px;
+  margin: 9px;
+  border-radius: 0.30rem;
+  background-color: #474747;
+  border-width: thick;
+  border-color: #D3A643;
+}
+
+.button-jumbotron {
+  background-color: #FFF9F3;
+  border-width: thin;
+  border-color: #757575;
+  border-radius: 10px;
+  color: rgb(0,0,0);
+}
+
+.button-jumbotron:hover {
+  background-color: #ffffff;
+  border-color: #ddd;
+}
+
+Heading-Funcions {
+}
+
+.Heading-Functions {
+  text-align: center;
+}
+
+#Heading-Funcions {
+  text-align: center;
+}
+
+.Icons {
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(255,182,0);
+}
+
+.Paragrafos-funcions {
+  text-align: center;
+}
+
+.jumbotron.functions {
+  background-color: #BFBFBF;
+  margin-right: 14px;
+  border-radius: 20px;
+  margin-left: 14px;
+}
+
+.col-lg-4.coluns {
+  border-radius: 3px;
+  border-style: hidden;
+  border-color: #ddd;
+  border-width: medium;
+  background-color: #FFF9F3;
+  padding: 3px;
+  margin-bottom: 14px;
+}
+
+#lista-objec {
+  background-color: #ddd;
+  border-radius: 10px;
+  border-width: thin;
+  border-color: rgb(0,0,0);
+  margin-bottom: 10px;
+}
+
+#butonslist {
+  margin-right: 15px;
+  font-size: 10px;
+  color:#BCBCBC;
+  background-color:#343a40;
+  border-color:rgb(255,182,0);
+}
+
+#list-icons {
+  font-size: 13px;
+  margin-top: -2px;
+  margin-bottom: -1px;
+}
+
+#butonslist:hover {
+  color: #343a40;
+  background-color: rgb(255,182,0);
+  border-color: #343a40;
+}
+
+.imagens {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.container.contentor-object {
+  padding: 5px;
+  max-width: 100%;
+}
+
+.container.contentor-allobject {
+  padding: 6px;
+  max-width: 100%;
+  background-color:  #343a40;;
+  border-radius: 5px;
+  border-width: thin;
+}
+
+.col-lg-4.colun-objects {
+  border-radius: 6px;
+  border-style: hidden;
+  border-color: #ddd;
+  border-width: medium;
+  background-color: #1748c6;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+$('#objextx').collapse {
+}
+
+#teste {
+  border-radius: 6px;
+  border-style: hidden;
+  border-color: #ddd;
+  border-width: medium;
+  background-color: #FFE1C6;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  background-color: #ffffff;
+  border-color: #ddd;
+}
+
+#Insert {
+  padding-top: 75px;
+  padding-bottom: 14px;
+  padding-left: 14px;
+  padding-left: 14px;
+  text-align: justify;
+}
+
+<script $(".custom-file-input").on("change", function() var fileName = $(this).val().split("\\").pop(); $(this).siblings(".custom-file-label").addClass("selected").html(fileName); ); </script > {
+}
+
+.text-break.text-left {
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.063rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  text-align: left;
+  background-color: #ffffff;
+}
+.border-radius {
+    border-radius: 340px;
+    width: 60%;
+}
+
+
+.Lefts {
+    margin-left: 0.5rem;
+}
+
+.Teste-us .equipa {
+    padding: 10vmin 4vmin;
+
+
+}
+
+.Teste-us.col-md-3 {
+    padding-right: 0.4 rem;
+    padding-left: 0.4 rem;
+    border-radius: 2px;
+
+
+
+}
+
+.Teste-us .card {
+    width: 18rem;
+    margin-top: 10vmin;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    padding-top: 3vmin;
+    background-color: rgb(188, 188, 188);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Teste-us .card-body>a {
+    font-size: 1.5rem;
+}
+
+.Teste-us .CodeUa {
+    margin-bottom: 4vmin;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    background-color: rgb(255, 182, 0);
+    color: #343a40;
+}
+
+.Teste-us .CodeUa:hover {
+    background-color: rgb(188, 188, 188);
+    border: 2px solid;
+    border-color: rgb(255, 182, 0);
+
+}
+
+
+.Teste-us .card .card-text {
+    padding: 1rem;
+    color: #343a40;
+    font-size: 1.2rem;
+
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Labit-g- (1)</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/untitled.css">
+    <style>
+        .slidecontainer {
+            min-width: 100px;
+            max-width: 500px;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 10px;
+            border-radius: 5px;
+            background: #BCBCBC;
+
+            opacity: 0.5;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #ffb600;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #ffb600;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: #BCBCBC" ">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top visible" data-aos="fade-down">
+        <div class="container-fluid"><a class="navbar-brand" href="/" target="_top"
+                style="background-color: #343a40;color: #ffb600;filter: blur(0px) brightness(100%);font-size: 29px;width: 100px;text-align: center;"><strong><em>Home</em></strong></a><button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="width: 588px;">
+                <ul class="nav navbar-nav shadow-lg ml-auto" style="/*background-color: rgba(162,164,160,0.58);*/">
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/all"
+                            style="color: #ffb600;"><em>Galeria</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/insert"
+                            style="color: #ffb600;"><em>Inserir</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/search"
+                            style="color: #ffb600;"><em>Pesquisar</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/about"
+                            style="color: #ffb600;"><em>Sobre</em></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="padding-top: 75px;padding-bottom: 14px;padding-left: 14px;padding-left: 14px;text-align: justify;">
+        <div class="jumbotron" style="background-color: #343a40;margin-right: 14px;border-radius: 20px;">
+            <h1 style="margin-bottom: 30px;color: #ffb600;">All</h1>
+            <p id="d" style="color:#ffff"></p>
+            <!--Slider-->
+            <div class=" slidecontainer" style="padding: 2vmin 3rem;  ">
+
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange" >
+
+                <p style="color:#BCBCBC">Valor confiança: <span id="Value"></span></p>
+
+            </div>
+
+
+            <ul class="list-group">
+                <li class="list-group-item" id="lista-objec"
+                    style="color: #ffb600;background-color: #BCBCBC; font-weight: bold; font-size: 2rem">
+                    <button class="btn btn-primary" data-bs-hover-animate="tada" id="butonslist" type="button"
+                        data-toggle="collapse" data-target="#objectx" aria-expanded="false" aria-controls="#objectx"><i
+                            class="fa fa-arrow-circle-down" id="list-icons"></i></button><span>All</span>
+                    <div class="row collapse" id="objectx" style="padding: 15px;">
+                        <div class="jumbotron" id="examaple" style="padding: 5px;background-color: #BCBCBC">
+                            <div id="op" width="12000px" onchange="location.reload()"></div>
+                            </br>
+                            <div id="oppp" width="12000px" onchange="location.reload(forceGet)"></div>
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="/js/untitled.js"></script>
+    
+    
+        <script>
+        $( document ).ready(function () {
+            var request = $.ajax({
+                'url': 'http://127.0.0.1:8899/all/allcrops?type=detected'
+            });
+            request.done(function (response) {
+				
+                var lista = JSON.parse(response,(key,value)=>{
+					
+					var img;
+					if(key=="image"){
+						img = value;
+						
+						document.getElementById("op").innerHTML += "<img src="+"\""+"/"+ value+"\"" +"style=\"width:120px;height:100px;\">";
+						}
+
+					});
+                var f= lista;
+                
+                var i, myJSON;
+			  var txt = "";
+			  
+			  var res="";
+			  var co=0;
+			  myJSON = JSON.stringify(lista);
+
+					
+					console.log("INSERT COMPLETE");
+				});
+				
+        });
+        </script>
+        <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("Value");
+        output.innerHTML = slider.value;
+
+        function update() {
+            render();
+        }
+
+        slider.onchange = function render() {
+            output.innerHTML = this.value;
+            var val = this.value;
+            var request = $.ajax({
+               'url': 'http://127.0.0.1:8899/all/allcrops?type=detected'
+            });
+            request.done(function (response) {
+				var a = "";
+				var b = "50";
+				var c = "";
+                var lista = JSON.parse(response, (key, value) => {
+                    
+                    if (key == "image") {
+                        a = value;
+                     
+                    }
+                    if (key == "confidence") {
+
+                        b = value;
+                    }
+                    if (b >= val && a!=c) {
+						console.log(a);
+						
+                        //document.getElementById("oppp").innerHTML+= "<img src="+"\""+"/"+ a +"\"" +"style=\"width:120px;height:100px;\">";
+                        a=c;
+
+                    }
+
+                })
+            });
+
+        }
+
+    </script>
+
+        <script>
+	
+        function load(){
+			var url="/allcrops";
+			
+			var i,x="";
+			console.log(url);
+			
+			$.getJSON(url,function(Data){
+				for(i in Data){
+				x+=Data[i];
+			}
+			});
+			console.log(x);
+		}
+      
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+    "truck": [
+        {
+            "image": "croppedImages/truck/rua_6.jpg",
+            "original": "images/rua.jpg",
+            "name": "rua_6.jpg",
+            "color": "blue",
+            "confidence": "65.0"
+        }
+    ]
+}

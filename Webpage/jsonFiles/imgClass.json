@@ -1,0 +1,60 @@
+{
+    "car": [
+        {
+            "image": "croppedImages/car/rua_5.jpg",
+            "original": "images/rua.jpg",
+            "name": "rua_5.jpg",
+            "color": "red",
+            "confidence": "68.0"
+        },
+        {
+            "image": "croppedImages/car/carros_1.jpg",
+            "original": "images/carros.jpg",
+            "name": "carros_1.jpg",
+            "color": "black",
+            "confidence": "99.0"
+        },
+        {
+            "image": "croppedImages/car/carros_3.jpg",
+            "original": "images/carros.jpg",
+            "name": "carros_3.jpg",
+            "color": "red",
+            "confidence": "99.0"
+        },
+        {
+            "image": "croppedImages/car/rua_4.jpg",
+            "original": "images/rua.jpg",
+            "name": "rua_4.jpg",
+            "color": "blue",
+            "confidence": "95.0"
+        },
+        {
+            "image": "croppedImages/car/carros_5.jpg",
+            "original": "images/carros.jpg",
+            "name": "carros_5.jpg",
+            "color": "blue",
+            "confidence": "96.0"
+        },
+        {
+            "image": "croppedImages/car/carros_4.jpg",
+            "original": "images/carros.jpg",
+            "name": "carros_4.jpg",
+            "color": "red",
+            "confidence": "98.0"
+        },
+        {
+            "image": "croppedImages/car/rua_3.jpg",
+            "original": "images/rua.jpg",
+            "name": "rua_3.jpg",
+            "color": "blue",
+            "confidence": "97.0"
+        },
+        {
+            "image": "croppedImages/car/carros_2.jpg",
+            "original": "images/carros.jpg",
+            "name": "carros_2.jpg",
+            "color": "blue",
+            "confidence": "99.0"
+        }
+    ]
+}

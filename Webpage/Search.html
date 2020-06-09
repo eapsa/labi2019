@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Labit-g- (1)</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/untitled.css">
+</head>
+
+<body style="background-color: rgb(188,188,188);">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top visible" data-aos="fade-down">
+        <div class="container-fluid"><a class="navbar-brand" href="/" target="_top"
+                style="background-color: #343a40;color: #ffb600;filter: blur(0px) brightness(100%);font-size: 29px;width: 100px;text-align: center;"><strong><em>Home</em></strong></a><button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="width: 588px;">
+                <ul class="nav navbar-nav shadow-lg ml-auto" style="/*background-color: rgba(162,164,160,0.58);*/">
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/all"
+                            style="color: #ffb600;"><em>Galeria</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/insert"
+                            style="color: #ffb600;"><em>Inserir</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/search"
+                            style="color: #ffb600;"><em>Pesquisar</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/about"
+                            style="color: #ffb600;"><em>Sobre</em></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   <div id="Insert" style="background-color: #bcbcbc;">
+		
+        <div class="jumbotron" style="background-color: #343a40;margin-right: 14px;border-radius: 20px;">
+           <h1 style="color: rgb(255,182,0)">Search Image&nbsp;</h1>
+            <button class="btn btn-primary" data-bs-hover-animate="tada" id="butonslist" type="button" data-toggle="collapse" data-target="#Single" aria-expanded="false" aria-controls="#Single" style="font-size: medium;color: rgb(255,255,255);background-color: rgb(188,188,188);"><i class="fa fa-arrow-circle-down" id="list-icons"></i>&nbsp;</button>
+            <div class="container /collapse " id="Single" style="margin-left: 40px">
+				<div class="col-lg-7 offset-lg-0 text-left" style="padding: 10px;">
+					<p class="text-break text-left"
+						style="background-color: #ddd;border-radius: 15px;border-width: thin;border-color: rgb(0,0,0);margin: 5px;">
+						<br>Parâmetros de pesquisa:<br>Primeiro => Classe<br>Segundo => Cor<br><br>
+					</p>
+				</div>
+			<a class="btn btn-primary button-jumbotron" role="button" onclick="getImg()"><i class="fa fa-search"></i></a><input type="search" id="write" name="params" value="Escreva aqui" ondblclick="white()"></div>
+				<div class="container contentor-allobject" id="op"></div>
+    </div>
+    </div>
+    </div> 
+    <script>
+		var url = "";
+		function sear(){
+			var x = document.getElementById("write").value;
+			if(x.includes(" "))
+			{
+				var y = x.split(" ");
+				if(y.length > 2)
+				{
+					alert("Demasiados argumentos!");
+				}
+				url = "\'http://127.0.0.1:10005/all/colorclass?type=detected&name=="+y[0]+"&color="+y[1]+"\'";
+			}
+			else
+			{
+				url = "http://127.0.0.1:10005/all/imgsclass?type=detected&name=="+x;
+			}
+			return url
+		};
+		function white(){
+			document.getElementById("write").value = ""
+			}
+		</script>
+		<script>
+			function getImg(){
+			url = sear()
+			
+			$( document ).ready(function () {
+				$("button").click(function () {
+					var request = $.ajax({
+						'url': "\'"+url+"\'"
+					});
+					console.log(url)
+					request.done(function (response) {
+						
+					var lista = JSON.parse(response,(key,value)=>{
+						var img;
+						if(key=="image"){
+							img = value;
+							console.log(img)
+							document.getElementById("op").innerHTML += "<img src=\"/"+ img+"\"style=\"width:120px;height:100px;\">";
+							}
+							
+							
+						});
+					var f= lista;
+					
+					var i, myJSON;
+				    var txt = "";
+				  
+				    var res="";
+				    var co=0;
+				    myJSON = JSON.stringify(lista);
+					
+				    for (i in lista) {
+						
+					
+				    //console.log(myJSON.replace("}, ","\n ").replace(/[*+?^${}()|[\]]/g, "").replace(".jpg'\" ",".jpg'\"\n").replace(".jpeg'\" ",".jpeg'\"\n").replace(".png'\" ",".png'\"\n"));
+					
+					}
+						//console.log(txt+"\n");
+						
+						
+						console.log("INSERT COMPLETE");
+					});
+				});
+			});
+		};
+        </script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="/js/untitled.js"></script>
+</body>
+
+</html>

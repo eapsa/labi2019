@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Inserir imagem</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/untitled.css">
+</head>
+<body style="background-color: rgb(188,188,188);">
+	
+    <div id="Insert" style="background-color: #bcbcbc;">
+		
+        <div class="jumbotron" style="background-color: #343a40;margin-right: 14px;border-radius: 20px;">
+            <h1 style="color: rgb(255,182,0);">Insert</h1>
+            <button class="btn btn-primary" data-bs-hover-animate="tada" id="butonslist" type="button" data-toggle="collapse" data-target="#Single" aria-expanded="false" aria-controls="#Single" style="font-size: medium;color: rgb(255,255,255);background-color: rgb(188,188,188);"><i class="fa fa-arrow-circle-down" id="list-icons"></i>&nbsp;</button>
+            <div
+                class="container /collapse " id="Single">
+               
+                <div style="padding: 10px;">
+						 
+                		<form method="post" action="put" enctype="multipart/form-data" target="formDestination">
+							 <input type="file" name="post_file" accept="image/*" id="img"  value="<?=$dt->img?>"  onchange="PreverIMG();" class="btn btn-primary button-jumbotron" style="margin-top: 10px;padding: 10px;background-color: #BCBCBC; margin-left: 0px"/><br/>
+							 <input type="submit" class="btn btn-primary button-jumbotron"  onclick="Confirm()" role="button" style="margin-top: -77px;margin-left: 400px;background-color: rgb(255,182,0);"/>
+	
+						</form>
+                <div
+                    style="padding: 5px;/*margin: 95px;*/margin-top: 30px;margin-left: 21%;margin-right: 21%;margin-bottom: 100px;max-width: 51%;text-align: center;"><img src="/img/in.png" class="img-fluid w-100" id="UploadPreVer"  style="border-radius: 4px;"></div>
+    </div>
+     <div class="jumbotron" style="opacity:0;margin:1px;max-width:1px;max-height:1px">
+		<iframe name = "formDestination" width="1" height="1" style="background-color:#343a40"> </iframe>
+	 </div>
+    </div>
+    </div>
+    
+    <nav class="navbar navbar-light navbar-expand-md fixed-top visible" data-aos="fade-down">
+        <div class="container-fluid"><a class="navbar-brand" href="/" target="_top"
+                style="background-color: #343a40;color: #ffb600;filter: blur(0px) brightness(100%);font-size: 29px;width: 100px;text-align: center;"><strong><em>Home</em></strong></a><button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="width: 588px;">
+                <ul class="nav navbar-nav shadow-lg ml-auto" style="/*background-color: rgba(162,164,160,0.58);*/">
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/all"
+                            style="color: #ffb600;"><em>Galeria</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/insert"
+                            style="color: #ffb600;"><em>Inserir</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/search"
+                            style="color: #ffb600;"><em>Pesquisar</em></a></li>
+                    <li class="nav-item Paginas" role="presentation"><a class="nav-link" href="/about"
+                            style="color: #ffb600;"><em>Sobre</em></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script type="text/javascript">
+ 
+        function PreverIMG() {
+ 
+                var reader = new FileReader();
+                reader.readAsDataURL(document.getElementById("img").files[0]);
+ 
+                reader.onload = function (event) {
+ 
+                        document.getElementById("UploadPreVer").src = event.target.result;
+						return document.getElementById("UploadPreVer").src;
+                };
+                
+        };
+        function Confirm(){
+			alert("Imagem submetida!\n(Caso não apareça qualquer recorte na galeria\nsignifica que não foi detetado qualquer\nobjeto com a confiança minima necessária.)")
+		};
+        
+ 
+</script>
+	
+</body>
+</html>
